@@ -1,10 +1,12 @@
 ---
 layout: home_page
-title: Doom
 ---
-<h2 class="test">{{ page.title }}</h2>
-<ul>
-	{% for post in site.posts %}
-	<li>{{ date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+	<div class="inner">
+		{% for post in site.posts %}
+			<li class="item">
+			<a class ="astyle" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+			</li>
+		<ul></ul>
 	{% endfor %}
+	</div>
 </ul>

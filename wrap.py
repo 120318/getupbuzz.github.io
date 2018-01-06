@@ -11,7 +11,7 @@ from watchdog.events import PatternMatchingEventHandler
 output_dir = './_posts/'
 input_dir = './src_post/'
 prefix_content = '''---
-layout: default
+layout: post
 title: {}
 ---
 '''
