@@ -5,6 +5,7 @@ layout: home_page
 		{% for post in site.posts %}
 			<li class="item">
 			<a class ="astyle" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+				<div class="item-date">{{ post.date | date_to_string }}</div>
 			</li>
 		<ul></ul>
 	{% endfor %}

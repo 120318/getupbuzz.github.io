@@ -1,16 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    {% include head.html %}
-    <title>Doom</title>
-</head>
-<body class="font-style">
-<a class="title" href="{{ site.baseurl }}{{ post.url }}/">Doom</a>
-<a class="about" href="{{ site.baseurl }}{{ post.url }}/about">关于</a>
-<hr color=#DCDCDC SIZE=1>
-<ul class="list" style>
+{% include head.html %}
+<ul class="list">
     {{ content }}
 </ul>
-</body>
-</html>
+{% include tail.html %}
