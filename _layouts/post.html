@@ -1,7 +1,9 @@
 {% include head.html %}
-<div class="content" style>
+<div align="center">
+<div class="content">
     <h3 class="content-title">{{page.title}}</h3>
     {{ content }}
     <div class="page-date">{{ page.date | date_to_string }}</div>
+</div>
 </div>
 {% include tail.html %}
