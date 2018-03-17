@@ -39,7 +39,7 @@ html {
 
 body
 {
-    font-family: Arial, STKaiti;
+    font-family: Arial;
     height:100%
 }
 
@@ -76,6 +76,8 @@ body
     width: 60%;
     border: 2px solid #DDDDDD;
     background: #F5F5F5;
+    /*letter-spacing:2px;*/
+    /*line-height:30px;*/
 }
 
 .inner
@@ -91,9 +93,9 @@ body
     margin-right: 40px;
 }
 
-li{
-    color: #DCDCDC;
-}
+/*li{*/
+    /*color: #DCDCDC;*/
+/*}*/
 
 a.astyle:hover
 {
