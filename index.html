@@ -1,11 +1,10 @@
 ---
 layout: home_page
 ---
-	<div class="inner" align="center">
+	<div class="inner" align="left">
 		{% for post in site.posts %}
-			<li class="item">
+			<li>
 			<a class ="astyle" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-				<div class="item-date">{{ post.date | date_to_string }}</div>
 			</li>
 		<ul></ul>
 	{% endfor %}

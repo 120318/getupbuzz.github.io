@@ -1,9 +1,15 @@
 {% include head.html %}
-<div align="center">
+<a href="{{ site.baseurl }}{{ post.url }}/">UP</a>
+<div align="left">
 <div class="content">
-    <h3 class="content-title">{{page.title}}</h3>
+    <h1 align="left" class="content-title">{{page.title}}</h1>
     {{ content }}
-    <div class="page-date">{{ page.date | date_to_string }}</div>
+    <hr>
+    <div class="page-date", align=right>write in {{ page.date | date_to_string }}</div>
 </div>
 </div>
-{% include tail.html %}
+</div>
+</div>
+</body>
+</html>
+
