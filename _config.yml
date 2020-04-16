@@ -1,7 +1,6 @@
 name: "Hi Stranger!"
 description: "Share something in a place where no one knows me."
 
-url: '' 
 baseurl: '/blog'
 
 markdown: kramdown
