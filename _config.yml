@@ -2,7 +2,7 @@ name: "Hi Stranger!"
 description: "Share something in a place where no one knows me."
 
 url: '' 
-baseurl: ''
+baseurl: '/blog'
 
 markdown: kramdown
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
