@@ -1,5 +1,5 @@
 #coding=utf-8
-# not support nested now.
+# 废弃 deprecated
 import sys
 import datetime
 import os
