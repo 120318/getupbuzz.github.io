@@ -1,15 +1,10 @@
-{% include head.html %}
-<a href="{{ site.baseurl }}{{ post.url }}/">UP</a>
-<div align="left">
-<div class="content">
-    <h1 align="left" class="content-title">{{page.title}}</h1>
-    {{ content }}
-    <hr>
-    <div class="page-date", align=right>write in {{ page.date | date_to_string }}</div>
-</div>
-</div>
-</div>
-</div>
-</body>
-</html>
+---
+layout: default
+---
+<h1>{{ page.title }}{{ page.shortUrl }}</h1>
+<div class='separator'></div>
+        
+{{ content }}
+        
+{% if site.disqus-id %} {% include comments.html %} {% endif %}
 

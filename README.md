@@ -1,0 +1,1 @@
+My blog, build with https://cyevgeniy.github.io/jekyll-true-minimal/ 

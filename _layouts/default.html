@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>
+        {% if page.title %}
+            {{ page.title }}
+        {% else %} 
+            {{ site.name }} &mdash; {{ site.description }}
+        {% endif %}
+    </title>
+    <link id="favicon" href="{{ site.url }}/assets/img/favicon.ico" rel="icon" type="image/x-icon" />
+
+    {% if site.highlighter %}
+        <link rel='stylesheet' href='{{ site.url }}/assets/css/syntax.css'>
+    {% endif %}
+    
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+</head>
+
+<body>
+    {% include header.html %}
+
+    {{ content }}
+<hr>
+    <p><small> <i>Build with <a href="https://jekyllrb.com/">Jekyll</a> and  <a href="https://github.com/cyevgeniy/jekyll-true-minimal/">true minimal theme</a></i> </small></p>
+</body>
+</html>
