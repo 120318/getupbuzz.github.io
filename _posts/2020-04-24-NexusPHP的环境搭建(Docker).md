@@ -21,9 +21,9 @@ category: Other
 
     拉取与启动方式详见上述链接中的README介绍。
 
-3. 配置环境
+3. 配置DB
 
-   查看NexusPHP源码配置，配置文件在`config/allconfig.php`,主要查看如下配置：
+   查看NexusPHP源码配置，配置文件在`config/allconfig.php`,主要查看部分如下：
    ```php
    $BASIC=array(
 	'SITENAME' => 'expample.com',
@@ -35,12 +35,14 @@ category: Other
 	'mysql_db' => 'nexusphp',
     )
    ```
-   可以通过phpmyadmin初始化NexusPHP数据库表，访问[http://localhost/pma/index.php](http://localhost/pma/index.php)（当然，也可直接通过命令行直接操作）
+   上面的Docker镜像内置安装了`phpmyadmin`，所以可以通过`phpmyadmin`初始化NexusPHP数据库表，直接访问[http://localhost/pma/index.php](http://localhost/pma/index.php)（当然，也可直接通过命令行直接操作）
 
-   新建Database，名字对应上面配置中`mysql_db`字段的值，新建用户，配置用户名和密码对应为上面配置中`mysql_user`和`mysql_pass`字段中的值
+    1. 新建Database，名字对应上面配置中`mysql_db`字段的值
+    2. 新建用户，配置用户名和密码分别对应为上面配置中`mysql_user`和`mysql_pass`字段中的值
+    3. 将NexusPHP源码中的`_db/dbstructure.sql`导入到上面所建的Database中
 
-   至此，NexusPHP配置完毕，你应该已经可以访问[http://localhost/index.php](http://localhost/index.php)
+至此，NexusPHP环境搭建完毕，你应该已经可以访问[http://localhost/index.php](http://localhost/index.php)。
 
-   **Now, enjoy!**
+**Now, enjoy!**
 
 # FAQ
