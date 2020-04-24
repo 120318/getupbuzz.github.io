@@ -15,6 +15,9 @@ plugins:
 paginate: 10
 paginate_path: /page-:num
 
+gems:
+  - jekyll-sitemap
+
 #disqus-id: your-disqus-id
 
 source: .
