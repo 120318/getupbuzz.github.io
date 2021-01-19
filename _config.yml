@@ -30,3 +30,5 @@ collections_dir: my_collections
 collections:
   microposts:
     output: true
+
+timezone: Asia/Shanghai
