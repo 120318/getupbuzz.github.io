@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+{% for post in site.microposts %}
+<p>
+    <h2> {{post.title}}</h2>
+    {{post.content}}
+    <small>
+        发布于{{post.date}}
+    </small>
+</p>
+{% endfor %}
