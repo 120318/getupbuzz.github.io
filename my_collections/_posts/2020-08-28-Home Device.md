@@ -13,7 +13,7 @@ category: Home Device
 ## 拓扑
 > *家中设备的拓扑图如下*
 
-![拓扑](/assets/img/home-device.jpg)
+![拓扑](/assets/img/home-device.jpg#width-full)
 
 相信有过一些研究的朋友可以看出来，这不是一套昂贵的方案，是一套大部分人都可以考虑的方案，而我个人认为，这是一套比较实用且体验较好的方案，相信可以满足大部分人的很多需求。
 

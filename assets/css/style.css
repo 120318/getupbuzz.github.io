@@ -3,3 +3,7 @@ pre[class='highlight'] {
 	padding: 0.5em;
 	white-space: pre-wrap;
 }
+
+img[src*="#width-full"] {
+ max-width: 80%;
+}

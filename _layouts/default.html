@@ -20,6 +20,11 @@
     
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="alternate" type="application/atom+xml" title="{{site.name}}" href="/feed.xml">
+    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
 
 
 </head>
@@ -30,5 +35,18 @@
     {{ content }}
 <hr>
     <p><small> <i>Build with <a href="https://jekyllrb.com/">Jekyll</a> and  <a href="https://github.com/cyevgeniy/jekyll-true-minimal/">true minimal theme</a></i> </small></p>
+    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <script>
+        // 给图片添加链接
+        $(document).ready(function() {
+            $("p img").each(function() {
+                var strA = "<a data-fancybox='gallery' ref='gallery1' href='" + this.src + "'></a>";
+                $(this).wrapAll(strA);
+            });
+
+            $('[data-fancybox="gallery"]').fancybox();
+        });
+    </script>
 </body>
 </html>
