@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://blog.tobecontinued.top/</loc>
+  <lastmod>2021-08-28T05:15:54+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://blog.tobecontinued.top/micropost/</loc>
+  <lastmod>2021-08-28T05:15:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.tobecontinued.top/about/</loc>
+  <lastmod>2021-08-28T05:15:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.tobecontinued.top/contact/</loc>
+  <lastmod>2021-08-28T05:15:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.tobecontinued.top/archive/</loc>
+  <lastmod>2021-08-28T05:15:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.tobecontinued.top/home%20device/2020/08/28/Home-Device.html</loc>
+  <lastmod>2021-08-28T05:15:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.tobecontinued.top/programming%20language/2018/03/17/Profilling-Go-Programs.html</loc>
+  <lastmod>2021-08-28T05:15:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
