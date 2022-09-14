@@ -54,7 +54,9 @@ mysql root@localhost:(none)> SHOW VARIABLES LIKE 'character%';
 8 rows in set
 Time: 0.009s
 ```
+
 > MySQl 5.7`默认使用的字符集 就是`Latin1`。
+
 * **`character_set_client`**： MySQL Server解码客户端传来的Query字符串所使用的字符集，在上面例子中，服务端收到`SHOW VARIABLES LIKE 'character%'`这条命令的字节流，会认为其是UTF-8编码。
 * **`character_set_connection`**：服务端收到请求执行Query时会将`character_set_client`的字符集转换为`character_set_connection`的字符集，当前的变量设置中二者字符集是一致的，不需要转换。
 * **`character_set_database`**： 数据库的默认字符集。
@@ -75,7 +77,7 @@ MySQL root@localhost:testdb> CREATE TABLE `test` (
   `default_name` varchar(225)
 ) ENGINE=InnoDB DEFAULT CHARACTER SET utf8
 ```
-对于某个字段（列）来说，它所使用的字符集的优先级为：**字段字符集->表字符集->数据库字符集->服务端字符集**。
+对于某个字段来说，它所使用的字符集的优先级为：**字段字符集->表字符集->数据库字符集->服务端字符集**。
 
 根据此规则以及上面的MySQl字符集变量，对于`testdb`中未显示指定字符集的表或者字段，将默认使用`latin1`字符集, `test`表使用`utf8`字符集，表中各字段的字符集如下：
 | 字段名 | 字符集 |
