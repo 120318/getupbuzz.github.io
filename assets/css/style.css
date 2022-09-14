@@ -1,8 +1,45 @@
-pre[class='highlight'] {
-	font-size: 1.0em;
-	white-space: pre-wrap;
+pre[class="highlight"] {
+  font-size: 1em;
+  white-space: pre-wrap;
 }
 
 img[src*="#width-full"] {
- max-width: 80%;
+  max-width: 50%;
+}
+
+blockquote {
+  margin: 0px;
+  padding-left: 5px;
+  color: gray;
+  font-size: 85%;
+}
+
+blockquote p {
+  display: inline;
+}
+
+ul {
+  padding-inline-start: 20px;
+}
+
+pre {
+  padding: 5px;
+}
+
+pre code {
+  padding: 0px;
+  color: unset;
+}
+
+code {
+  color: #ae0c0c;
+  padding: 0px 5px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
 }

@@ -55,16 +55,16 @@ mysql root@localhost:(none)> SHOW VARIABLES LIKE 'character%';
 Time: 0.009s
 ```
 
-> `MySQl 5.7`默认使用的字符集 就是`Latin1`。
+> `MySQl 5.7`默认使用的字符集 就是`Latin1`
 
-* **`character_set_client`**： MySQL Server解码客户端传来的Query字符串所使用的字符集，在上面例子中，服务端收到`SHOW VARIABLES LIKE 'character%'`这条命令的字节流，会认为其是UTF-8编码。
-* **`character_set_connection`**：服务端收到请求执行Query时会将`character_set_client`的字符集转换为`character_set_connection`的字符集，当前的变量设置中二者字符集是一致的，不需要转换。
-* **`character_set_database`**： 数据库的默认字符集。
-* **`character_set_filesystem`**：会将Query中的文件名转化成此字符集，比如在`LOAD DATA` Query中，对于其中的文件名，会认为其是`character_set_client`，并将其转换成`character_set_filesystem`， 默认值就是binary，意思就是不做任何转换的，只关注二进制流。
-* **`character_set_results`**：MySQL Server将查询结果返回给客户端时所使用的字符集。
-* **`character_set_server`**：MySQL Server的默认字符集
-* **`character_set_system`**：数据库存储系统元数据使用的字符集，默认是`utf8`。
-* **`character_sets_dir`**：字符集文件所在的目录
+* **character_set_client**： MySQL Server解码客户端传来的Query字符串所使用的字符集，在上面例子中，服务端收到`SHOW VARIABLES LIKE 'character%'`这条命令的字节流，会认为其是UTF-8编码。
+* **character_set_connection**：服务端收到请求执行Query时会将`character_set_client`的字符集转换为`character_set_connection`的字符集，当前的变量设置中二者字符集是一致的，不需要转换。
+* **character_set_database**： 数据库的默认字符集。
+* **character_set_filesystem**：会将Query中的文件名转化成此字符集，比如在`LOAD DATA` Query中，对于其中的文件名，会认为其是`character_set_client`，并将其转换成`character_set_filesystem`， 默认值就是binary，意思就是不做任何转换的，只关注二进制流。
+* **character_set_results**：MySQL Server将查询结果返回给客户端时所使用的字符集。
+* **character_set_server**：MySQL Server的默认字符集
+* **character_set_system**：数据库存储系统元数据使用的字符集，默认是`utf8`。
+* **character_sets_dir**：字符集文件所在的目录
 
 我们在建表，建库的时候，可以在数据库、表、字段的后面加上字符集相关参数。
 这里我们创建一个名为`testdb`的数据库和一张名为`test`的表：
@@ -80,11 +80,13 @@ MySQL root@localhost:testdb> CREATE TABLE `test` (
 对于某个字段来说，它所使用的字符集的优先级为：**字段字符集->表字符集->数据库字符集->服务端字符集**。
 
 根据此规则以及上面的MySQl字符集变量，对于`testdb`中未显示指定字符集的表或者字段，将默认使用`latin1`字符集, `test`表使用`utf8`字符集，表中各字段的字符集如下：
+
 | 字段名 | 字符集 |
-| ---- | ---- |
+|-------|-------|
 | latin_name | latin1 |
 | utf8mb4_name | utf8mb4 |
 | default_name | utf8 |
+
 ### utf8与utf8mb4
 这里出现了一个叫`utf8mb4`的字符集，实际上这才是MySQL中真正的`utf8`字符集，而MySQL中的`utf8`实际上是一个阉割版的`utf8`字符集，它是`utf8mb3`，他每个字符最长只有3字节，是不完全的，这是MySQL的一个历史问题。
 ### 查询中字符集的转换过程
