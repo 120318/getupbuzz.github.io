@@ -55,7 +55,7 @@ mysql root@localhost:(none)> SHOW VARIABLES LIKE 'character%';
 Time: 0.009s
 ```
 
-> MySQl 5.7`默认使用的字符集 就是`Latin1`。
+> `MySQl 5.7`默认使用的字符集 就是`Latin1`。
 
 * **`character_set_client`**： MySQL Server解码客户端传来的Query字符串所使用的字符集，在上面例子中，服务端收到`SHOW VARIABLES LIKE 'character%'`这条命令的字节流，会认为其是UTF-8编码。
 * **`character_set_connection`**：服务端收到请求执行Query时会将`character_set_client`的字符集转换为`character_set_connection`的字符集，当前的变量设置中二者字符集是一致的，不需要转换。
