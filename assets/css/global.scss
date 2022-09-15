@@ -1,5 +1,4 @@
 pre[class="highlight"] {
-  font-size: 1em;
   white-space: pre-wrap;
 }
 
@@ -18,7 +17,8 @@ blockquote p {
   display: inline;
 }
 
-ul {
+ul,
+ol {
   padding-inline-start: 20px;
 }
 
